@@ -1,0 +1,140 @@
+.plans {
+  padding: 10px 30px;
+  width: 48%;
+}
+
+.plans .monthly,
+.plans .yearly {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.plans .box {
+  margin-bottom: 10px;
+  border: 1px solid hsl(229, 24%, 87%);
+  padding: 20px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 150px;
+  height: 125px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.plans .active {
+  background-color: hsl(217, 100%, 97%);
+  border-color: hsl(243, 100%, 62%);
+}
+.plans .box:hover {
+  border-color: hsl(243, 100%, 62%);
+}
+.plans .box .type {
+  margin-bottom: 0;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 500;
+  color: hsl(213, 96%, 18%);
+}
+.plans .box .fee {
+  font-size: 12px;
+  color: hsl(231, 11%, 63%);
+  text-transform: none;
+  display: block;
+  margin-top: 5px;
+}
+.plans .box .offer {
+  color: hsl(213, 96%, 18%);
+  font-weight: 400;
+  text-transform: none;
+  display: block;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.plans .shift {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px auto 15px;
+  width: 100%;
+  height: 40px;
+  background-color: hsl(217, 100%, 97%);
+  border-radius: 6px;
+}
+.plans .shift p {
+  margin: 0;
+  font-size: 13px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.plans .shift .m {
+  color: hsl(213, 96%, 18%);
+}
+.plans .shift .y {
+  color: hsl(231, 11%, 63%);
+}
+.plans .shift .dot {
+  position: relative;
+  width: 22px;
+  background-color: hsl(213, 96%, 18%);
+  height: 12px;
+  border-radius: 6px;
+  margin: 0 15px;
+}
+.plans .shift .dot span {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  left: 2px;
+  top: 50%;
+  transform: translate(0, -50%);
+  background-color: hsl(0, 0%, 100%);
+  transition: 0.3s;
+}
+@media (max-device-width: 375px) {
+  .plans {
+    width: 100%;
+    height: 490px;
+    background-color: hsl(217, 100%, 97%);
+  }
+
+  .plans .desc {
+    margin-bottom: 0;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+  }
+  .plans .contents {
+    padding: 20px;
+  }
+  .plans .monthly,
+  .plans .yearly {
+    flex-direction: column;
+  }
+  .plans .box {
+    width: 100%;
+    flex-direction: row;
+    height: auto;
+    justify-content: flex-start;
+    align-items: center;
+    height: 48px;
+    margin-bottom: 5px;
+  }
+  .plans .box .type {
+    margin: 0 0 0 15px;
+  }
+  .plans .shift {
+    margin-top: 10px;
+  }
+  .plans .actions {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: hsl(0, 0%, 100%);
+    height: 60px;
+  }
+}

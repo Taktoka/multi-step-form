@@ -1,0 +1,91 @@
+.summary {
+  width: 48%;
+  padding: 10px 30px;
+}
+.summary .desc {
+  margin-bottom: 30px;
+}
+.summary .details {
+  width: 90%;
+}
+.summary p {
+  font-size: 13px;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.summary .price {
+  color: hsl(213, 96%, 18%);
+  font-size: 13px;
+  text-transform: none;
+}
+.summary .choosen-plan,
+.summary .choosen-add {
+  width: 100%;
+  background-color: hsl(231, 100%, 99%);
+  padding: 20px;
+  border-radius: 6px 6px 0 0;
+}
+.summary .choosen-add {
+  border-radius: 0 0 6px 6px;
+}
+.summary .choosen-plan {
+  position: relative;
+}
+.summary .choosen-plan::after {
+  position: absolute;
+  content: "";
+  width: 90%;
+  height: 1px;
+  background-color: hsl(229, 24%, 87%);
+  bottom: 0;
+  left: 22px;
+}
+
+.summary .choosen-plan p {
+  font-weight: 500;
+  color: hsl(213, 96%, 18%);
+  text-transform: capitalize;
+}
+.summary .choosen-plan a {
+  color: hsl(231, 11%, 63%);
+  font-size: 13px;
+  transition: 0.3s;
+}
+.summary .choosen-plan a:hover {
+  color: hsl(243, 100%, 62%);
+}
+.summary .total {
+  margin: 25px 0 37px 0;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.summary .total p {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+.summary .choosen-add {
+  margin-bottom: 20px;
+}
+.summary .choosen-add p:first-child {
+  margin-bottom: 15px;
+}
+
+.summary .total .total_price {
+  color: hsl(243, 100%, 62%);
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.summary .confirm {
+  background-color: hsl(243, 100%, 62%);
+  transition: 0.3s;
+  cursor: pointer;
+}
+.summary .confirm:hover {
+  opacity: 50%;
+}

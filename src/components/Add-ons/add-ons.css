@@ -1,0 +1,91 @@
+.add-ons {
+  width: 48%;
+  padding: 10px 30px;
+}
+.add-ons .desc {
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+.add-ons .monthly {
+  display: block;
+}
+.add-ons .yearly {
+  display: block;
+}
+.add-ons .box {
+  width: 90%;
+  border: 1px solid hsl(231, 11%, 63%);
+  border-radius: 6px;
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  gap: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.box:hover {
+  border-color: hsl(243, 100%, 62%);
+}
+.add-ons .box:last-child {
+  margin-bottom: 0;
+}
+.add-ons h4 {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+.add-ons p {
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.add-ons .check {
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
+  border: 1px solid hsl(231, 11%, 63%);
+  background-color: transparent;
+  font-size: 2px;
+  text-align: center;
+  line-height: 15px;
+}
+.add-ons .check svg {
+  position: relative;
+  transform: translate(-50%);
+  top: 20%;
+  left: 35%;
+}
+.add-ons .price {
+  margin-left: auto;
+  font-size: 13px;
+  color: hsl(243, 100%, 62%);
+  font-weight: 500;
+}
+.add-ons .actions {
+  bottom: -93px;
+}
+
+.add-ons .hide {
+  display: none;
+}
+
+.add-ons .active {
+  background-color: hsl(217, 100%, 97%);
+  border-color: hsl(243, 100%, 62%);
+}
+
+.add-ons .selected {
+  background-color: hsl(243, 100%, 62%);
+}
+@media (max-device-width: 375px) {
+  .add-ons .container {
+    height: 440px;
+  }
+  .add-ons .box {
+    padding: 10px;
+    margin-bottom: 15px;
+    gap: 15px;
+  }
+}

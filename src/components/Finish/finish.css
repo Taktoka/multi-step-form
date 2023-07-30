@@ -1,0 +1,36 @@
+.final {
+  width: 45%;
+  margin: auto;
+  text-align: center;
+  padding: 30px;
+}
+.final .checked {
+  margin-bottom: 20px;
+}
+.final h1 {
+  color: hsl(213, 96%, 18%);
+  font-size: 35px;
+}
+.final p {
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+@media (max-device-width: 375px) {
+  .final .container {
+    height: 375px;
+  }
+  .final .checked {
+    margin: 50px 0 0;
+  }
+  .final .checked svg {
+    width: 50px;
+    height: 50px;
+  }
+  .final h1 {
+    font-size: 27px;
+  }
+  .final p {
+    font-size: 16px;
+  }
+}
